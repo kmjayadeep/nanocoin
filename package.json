@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "node dist/main.js"
+    "start": "node dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
     "@types/node": "^10.12.15",
     "body-parser": "^1.18.3",
     "crypto-js": "^3.1.9-1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "ws": "^6.1.2"
   }
 }

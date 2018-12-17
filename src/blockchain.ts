@@ -32,6 +32,10 @@ const generateNextBlock = (blockData: string): Block => {
 }
 
 const isValidNewBlock = (newBlock: Block, previousBlock: Block) => {
+    if (!isValidBlockStructure(newBlock)) {
+        console.log('invalid structure');
+        return false;
+    }
     if (previousBlock.index + 1 !== newBlock.index) {
         console.log('invalid index');
         return false;
